@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "@class": "edu.udo.cs.sopra.ntf.PlaceMessage",
+  "type": "object",
+  "title": "Place Message Schema",
+  "required": ["habitatCoordinates", "wildlifeCoordinates", "habitatRotation"],
+  "properties": {
+    "habitatCoordinates": {
+      "$ref": "#/definitions/pair"
+    },
+    "wildlifeCoordinates": {
+      "type": ["object", "null"],
+      "required": ["first", "second"],
+      "properties": {
+        "first": {
+          "type": "integer"
+        },
+        "second": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "habitatRotation": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "pair": {
+      "type": "object",
+      "required": ["first", "second"],
+      "properties": {
+        "first": {
+          "type": "integer"
+        },
+        "second": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,8 @@
+/build/
+/.idea/
+/.gradle/
+/public/coverage-error.log
+
+coverage-error.log
+public/
+grade.properties

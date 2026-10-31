@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "@class": "edu.udo.cs.sopra.ntf.UseNatureTokenMessage",
+  "type": "object",
+  "title": "Use Nature Token Message",
+  "additionalProperties": false
+}

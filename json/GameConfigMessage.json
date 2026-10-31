@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "@class": "edu.udo.cs.sopra.ntf.GameConfigMessage",
+  "type": "object",
+  "title": "GameConfigMessage",
+  "required": [
+    "players",
+    "scoringCards"
+  ],
+  "properties": {
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 4,
+      "uniqueItems": true
+    },
+    "scoringCards": {
+      "type": "array",
+      "items": {
+        "type": ["boolean", "null"]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {}
+}

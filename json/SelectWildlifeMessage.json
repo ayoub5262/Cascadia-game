@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "@class": "edu.udo.cs.sopra.ntf.SelectWildlifeMessage",
+  "type": "object",
+  "title": "Select Wildlife Message",
+  "required": [
+    "wildlifeShopIndex"
+  ],
+  "properties": {
+    "wildlifeShopIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    }
+  },
+  "additionalProperties": false
+}
